@@ -1,0 +1,126 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $FontColor;
+}
+#headerWrapper {
+  background-color: $SecondaryColor;
+  color: $SecondaryColor;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  div {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem $gutter;
+    gap: 8px;
+    h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: $normalWeight;
+      color: $FontColor;
+    }
+  }
+  a {
+    color: $FontColor;
+  }
+}
+
+#navWrapper {
+  background-color: $FontColor;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    li {
+      flex: 1;
+      border: solid 1px $SecondaryColor;
+    }
+  }
+  a {
+    display: block;
+    padding: 0.75rem;
+    color: $SecondaryColor;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      color: $SecondaryColor;
+    }
+  }
+  li.active {
+    background-color: $PrimaryColor;
+    a {
+      color: $FontColor;
+    }
+  }
+}
+
+main {
+  margin: 0 1rem;
+  h1 {
+    color: $PrimaryColor;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+      position: relative;
+      margin: 1rem;
+      background-color: $PrimaryColor;
+      border-radius: 20px;
+      h2 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $PrimaryColor;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+        margin: 0;
+      }
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+// begin the footer
+#footerWrapper {
+  background-color: $SecondaryColor;
+}
+footer {
+  padding: 0.5rem $gutter;
+  p {
+    margin: 0;
+    font-weight: $lightWeight;
+    text-align: center;
+    color: #fbf0d8;
+  }
+}

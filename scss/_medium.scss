@@ -1,0 +1,26 @@
+header {
+    padding: 2rem $gutter;
+    justify-content: space-between;
+    div {
+        h1 {font-size: 2rem;}
+    }
+
+}
+
+nav {
+    ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        a {
+            text-align: left;
+        }
+    }
+}
+
+main {
+    section {
+        div {
+            flex-basis: 45%;
+        }
+    }
+}
