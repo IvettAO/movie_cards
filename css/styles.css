@@ -403,13 +403,11 @@ main section {
 }
 main section div {
   position: relative;
-  margin: 1rem;
+  margin: 2rem 3rem;
   background-color: #7b002c;
   border-radius: 20px;
 }
 main section div h2 {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color: #7b002c;
   padding: 10px;
@@ -418,7 +416,7 @@ main section div h2 {
   margin: 0;
 }
 main section div img {
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 
 #footerWrapper {
@@ -451,7 +449,8 @@ footer p {
     text-align: left;
   }
   main section div {
-    flex-basis: 45%;
+    flex-basis: 41%;
+    margin: 1rem;
   }
 }
 @media only screen and (min-width: 60rem) {

@@ -91,12 +91,10 @@ main {
 
     div {
       position: relative;
-      margin: 1rem;
+      margin: 2rem 3rem;
       background-color: $PrimaryColor;
       border-radius: 20px;
       h2 {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         background-color: $PrimaryColor;
         padding: 10px;
@@ -105,7 +103,7 @@ main {
         margin: 0;
       }
       img {
-        border-radius: 20px;
+        border-radius: 20px 20px 0 0;
       }
     }
   }
