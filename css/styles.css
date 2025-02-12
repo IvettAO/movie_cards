@@ -403,7 +403,7 @@ main section {
 }
 main section div {
   position: relative;
-  margin: 2rem 3rem;
+  margin: 2rem 0;
   background-color: #7b002c;
   border-radius: 20px;
 }
@@ -416,6 +416,8 @@ main section div h2 {
   margin: 0;
 }
 main section div img {
+  width: 100%;
+  height: auto;
   border-radius: 20px 20px 0 0;
 }
 
